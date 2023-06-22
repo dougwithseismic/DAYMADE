@@ -1,0 +1,26 @@
+{
+    "name": "winner-calculator",
+    "version": "1.0.0",
+    "description": "A command-line program to determine the winning lottery prize",
+    "main": "src/winning-calculator.js",
+    "scripts": {
+        "compile": "tsc ./src/winning-calculator.ts",
+        "start": "tsc && node ./build/winning-calculator.js",
+        "format": "prettier --write ./src",
+        "cmd-line": "ts-node ./src/cmd-line.ts",
+        "demo": "ts-node ./src/demo.ts"
+    },
+    "author": "Doug Silkstone (twitter.com/dougiesilkstone)",
+    "license": "ISC",
+    "dependencies": {
+        "commander": "^11.0.0",
+        "uuid": "^9.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.3.1",
+        "@types/uuid": "^9.0.2",
+        "nodemon": "^2.0.22",
+        "prettier": "^2.8.8",
+        "ts-node": "^10.9.1"
+    }
+}
