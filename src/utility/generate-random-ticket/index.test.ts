@@ -10,15 +10,16 @@ describe('generateRandomNumbers', () => {
     const result = generateRandomNumbers(randomDraw)
 
     const flatPoolsLength = randomDraw.pools.reduce((acc, pool) => acc + pool.length, 0)
-
     expect(result).toHaveLength(flatPoolsLength)
 
+    let poolStartIndex = 0 // Keep track of the start index of the current pool. This will be incremented as we loop through the pools
     randomDraw.pools.forEach((pool, i) => {
-      const poolNumbers = result.slice(i * pool.length, (i + 1) * pool.length)
+      const poolNumbers = result.slice(poolStartIndex, poolStartIndex + pool.length)
       poolNumbers.forEach((num: number) => {
         expect(num).toBeGreaterThanOrEqual(pool.min)
         expect(num).toBeLessThanOrEqual(pool.max)
       })
+      poolStartIndex += pool.length
     })
   })
 })

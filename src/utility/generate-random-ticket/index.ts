@@ -7,16 +7,18 @@ interface RandomTicketResult {
   ticket: number[]
 }
 export const generateRandomNumbers = (draw: Draw): number[] => {
-  return draw.pools
+  const randomNumbers = draw.pools
     .map((pool) => {
-      const poolNumbers = new Set<number>()
+      const poolNumbers = new Set<number>() // We're using a set to prevent duplicates.
       while (poolNumbers.size < pool.length) {
         const randomNumber = Math.floor(Math.random() * (pool.max - pool.min + 1)) + pool.min
-        poolNumbers.add(randomNumber)
+        poolNumbers.add(randomNumber) // We're adding a new random number to the set so that we can replace duplicates.
       }
       return Array.from(poolNumbers)
     })
     .flat()
+
+  return randomNumbers
 }
 
 const generateRandomTicket = (): RandomTicketResult => {
@@ -35,3 +37,5 @@ const generateRandomTicket = (): RandomTicketResult => {
 }
 
 export default generateRandomTicket
+
+generateRandomTicket()
