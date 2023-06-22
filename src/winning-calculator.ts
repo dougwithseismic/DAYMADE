@@ -1,9 +1,9 @@
-import { printResults } from './utility/print-results/index.ts'
+import { printResults } from './utility/print-results'
 import { getDrawByName } from './utility/get-draw-by-name'
 
 import { ResultType, TicketType, PrizeDrawName } from './types'
 import { splitArrayToPools } from './utility/split-array-to-pools'
-import { validateTicket } from './utility/validate-tickets/index.ts'
+import { validateTicket } from './utility/validate-tickets'
 import { checkForMatches } from './utility/check-for-matches'
 import { mapMatchesToPrizes } from './utility/map-matches-to-prizes/map-matches-to-prizes'
 
@@ -14,7 +14,11 @@ import { mapMatchesToPrizes } from './utility/map-matches-to-prizes/map-matches-
  * @param ticket - The Ticket Numbers
  */
 
-type ProcessTicket = (prizeDraw: PrizeDrawName, result: ResultType, ticket: TicketType) => void
+export type ProcessTicket = (
+  prizeDraw: PrizeDrawName,
+  result: ResultType,
+  ticket: TicketType,
+) => void
 
 export const processTicket: ProcessTicket = (prizeDraw, result, ticket) => {
   // Fetch the draw details.

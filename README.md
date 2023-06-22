@@ -21,7 +21,7 @@ entered into that lottery.
 2. Navigate to the project directory:
 
    ```bash
-   cd daytmade-coding-challenge
+   cd daymade-coding-challenge
    ```
 
 3. Install the dependencies:
@@ -70,12 +70,10 @@ This ticket won prize class 5 with the name Silver in the DAYMADE lottery.
 Matched the numbers 3, 22 from pool 1 and Matched the numbers 4 from pool Bonus
 ```
 
-This command will execute the `cmd-line.ts` script with the provided command-line arguments.
+This command will  execute the `cmd-line.ts` script with the provided command-line arguments.
 
 ## Code Decisions and Extensibility
 
-### TypesScript
+### TypeScript
 
-The project uses TypeScript to take advantage of static typing and better developer tooling. It provides type safety and improved code maintainability, which is feels very much like bowling with the sides up; empowered code completion everywhere. It's especially important that we lay the groundwork for new hires with Type safety, and it makes life easier with no hassle :)
-
-... tba
+The project uses TypeScript to take advantage of static typing and better developer tooling. It provides type safety and improved code maintainability, which is feels very much like bowling with the sides up; empowered code completion everywhere. It's especially important that we lay the groundwork for new hires with Type safety, and it makes life easier with no hassle
