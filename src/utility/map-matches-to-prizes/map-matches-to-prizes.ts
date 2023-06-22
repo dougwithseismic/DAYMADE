@@ -1,4 +1,4 @@
-import { Draw, Prize } from '../types'
+import { Draw, Prize } from '../../types'
 
 type MapMatchesToPrizes = (matches: number[][], draw: Draw) => Prize[] | null
 

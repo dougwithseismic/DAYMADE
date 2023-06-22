@@ -1,4 +1,4 @@
-import { Prize, Pool } from '../types'
+import { Prize, Pool } from '../../types'
 
 type PrintResults = (
   prize: Prize[] | null,

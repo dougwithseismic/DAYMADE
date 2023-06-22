@@ -1,4 +1,4 @@
-import { TicketType, Pool } from '../types'
+import { TicketType, Pool } from '../../types'
 
 type SplitArrayToPools = (ticket: TicketType, pools: Pool[]) => number[][]
 

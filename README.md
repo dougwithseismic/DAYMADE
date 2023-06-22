@@ -58,6 +58,8 @@ The `cmd-line` script processes tickets based on command-line arguments. To run 
 
 ```bash
 npm run cmd-line -- "DAYMADE" "3,7,22,34,4" "3,10,22,35,4"
+npm run cmd-line -- "DAILY_FREE" "3,7,22,34,4" "3,10,22,35,4"
+npm run cmd-line -- "TRIPLE_CHANCE" "3,7,22,34,4" "3,10,22,35,4"
 
 Processing ticket for DAYMADE
 --------------------

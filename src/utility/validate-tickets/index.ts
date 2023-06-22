@@ -1,4 +1,4 @@
-import { Pool } from '../types'
+import { Pool } from '../../types'
 
 /**
  * Function to validate ticket.

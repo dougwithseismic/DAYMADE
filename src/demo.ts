@@ -6,9 +6,9 @@ console.log('---------')
 
 console.log('An invalid Ticket Example')
 try {
-  processTicket('DAYMADE', [3, 7, 34, 4], [3, 10, 90, 35, 4])
+  processTicket('DAILY_FREE', [3, 7, 34, 4], [3, 10, 90, 35, 4])
 } catch (error: any) {
-  console.log(`Invalid ticket for the DAYMADE draw.`, error.message)
+  console.log(`Invalid ticket for the DAILY_FREE draw.`, error.message)
 }
 console.log('---------')
 

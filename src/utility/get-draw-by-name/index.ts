@@ -1,5 +1,5 @@
-import { Draw, PrizeDrawName } from '../types'
-import draws from '../draws'
+import { Draw, PrizeDrawName } from '../../types'
+import draws from '../../draws'
 
 type GetDrawByName = (prizeDraw: PrizeDrawName) => Draw
 
