@@ -7,7 +7,7 @@
         "compile": "tsc ./src/winning-calculator.ts",
         "start": "tsc && node ./build/winning-calculator.js",
         "format": "prettier --write ./src",
-        "generate":  "ts-node ./src/utility/generate-random-ticket/index.ts",
+        "generate": "ts-node ./src/utility/generate-random-ticket/index.ts",
         "cmd-line": "ts-node ./src/cmd-line.ts",
         "demo": "ts-node ./src/demo.ts",
         "test": "jest --coverage"
